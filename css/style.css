@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@font-face {
+	font-family: 'Unisono';
+	src: url('fonts/unisono/Unisono/fonts/Unisono Lowercase.eot');
+	src: local('☺'), url('fonts/unisono/Unisono/fonts/Unisono Lowercase.woff') format('woff'), url('fonts/unisono/Unisono/fonts/Unisono Lowercase.ttf') format('truetype'), url('fonts/unisono/Unisono/fonts/Unisono Lowercase.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url('fonts/comfortaa/Comfortaa/fonts/Comfortaa-Regular.eot');
+	src: local('☺'), url('fonts/comfortaa/Comfortaa/fonts/Comfortaa-Regular.woff') format('woff'), url('fonts/comfortaa/Comfortaa/fonts/Comfortaa-Regular.ttf') format('truetype'), url('fonts/comfortaa/Comfortaa/fonts/Comfortaa-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+#content {
+    text-align: center;
+}
+
+#defaultNotification {
+    background: #fcba03;
+    width: 100%;
+    padding: 5px;
+    color: #946d00;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    animation: 1s notify-start;
+}
+
+#successNotification {
+    background: #03fc24;
+    width: 100%;
+    padding: 5px;
+    color: #00660e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    animation: 1s notify-start;
+}
+
+#errorNotification {
+    background: #f71b1b;
+    width: 100%;
+    padding: 5px;
+    color: #991414;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    text-align: center;
+    animation: 1s notify-start;
+}
+
+#notifyes code {
+    background: #1e1e1e;
+    padding: 3px;
+    font-family: 'Source Code Pro';
+    border-radius: 8px;
+    color: #d4d4d4;
+}
+
+@keyframes notify-start {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+body {
+    background: #252525;
+    background-size: 400%;
+    /* animation: 10s body-gradient infinite; */
+    /* animation: 3s body-anim; */
+}
+
+@keyframes body-anim {
+    0% {
+        opacity: 0;
+        transform: scale(0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes body-gradient {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+#header {
+    text-align: center;
+}
+
+#header_title span {
+    font-size: 50px;
+}
+
+#codemaster {
+    color: #d4d4d4;
+    font-family: 'Comfortaa';
+}
+
+#digit74 {
+    color: #d4d4d4;
+    font-family: 'Unisono';
+}
+
+#download-button {
+    padding: 5px;
+    background: transparent;
+    color: #c8c8c8;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
+    animation: 10s up-down infinite;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(3px);
+    }
+
+    50% {
+        transform: translateY(-3px);
+    }
+
+    100% {
+        transform: translateY(3px);
+    }
+}
+
+#download-button:disabled {
+    cursor: not-allowed;
+}
+
+#download-button:hover {
+    color: #ffffff;
+}
+
+#default_title {
+    color: #d4d4d4;
+    font-family: 'Comfortaa';
+    font-size: 25px;
+    display: block;
+}
+
+#developer {
+    background-color: #151515;
+    width: 400px;
+    text-align: center;
+    animation: 5s up-down infinite;
+    border-radius: 7px;
+    color: #ffffff;
+    padding: 5px;
+    margin: 2px;
+    display: inline-block;
+}
+
+#developer_name {
+    font-size: 20px;
+    font-family: 'Comfortaa';
+    color: #ffffff;
+}
+
+#developer_bio {
+    color: #d4d4d4;
+    font-family: 'Comfortaa';
+}
+
+#developer_sector {
+    font-family: 'Unisono';
+    color: #d4d4d4;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+#header_desc {
+    font-size: 25px;
+    color: #d4d4d4;
+    margin-bottom: 10px;
+    font-family: 'Comfortaa';
+}
+
+footer {
+    color: #d4d4d4;
+    font-family: 'Comfortaa';
+    margin-top: 30px;
+}
